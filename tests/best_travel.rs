@@ -1,6 +1,6 @@
 use rust_katas::best_travel::choose_best_sum;
 
-fn testing(t: i32, k: i32, ls: &Vec<i32>, exp: i32) -> () {
+fn testing(t: i32, k: i32, ls: &Vec<i32>, exp: i32) {
     assert_eq!(choose_best_sum(t, k, ls), exp)
 }
 

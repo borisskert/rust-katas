@@ -2,7 +2,7 @@
 mod tests {
     use rust_katas::help_the_bookseller::stock_list;
 
-    fn dotest(list_art: Vec<&str>, list_cat: Vec<&str>, exp: &str) -> () {
+    fn dotest(list_art: Vec<&str>, list_cat: Vec<&str>, exp: &str) {
         println!("list_art: {:?};", list_art);
         println!("list_cat: {:?};", list_cat);
         let ans = stock_list(list_art, list_cat);
@@ -10,7 +10,7 @@ mod tests {
         println!("expect:\n{:?};", exp);
         println!("{};", ans == exp);
         assert_eq!(ans, exp);
-        println!("{};", "-");
+        println!("-;");
     }
 
     #[test]

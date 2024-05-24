@@ -9,7 +9,7 @@ pub fn stock_list(list_art: Vec<&str>, list_cat: Vec<&str>) -> String {
 
     let stock_items: Vec<StockItem> = list_art.iter()
         .map(|item_str| item_str.to_string())
-        .map(|item_string| StockItem::new(item_string))
+        .map(StockItem::new)
         .collect();
 
     let stock = create_stock(stock_items);
@@ -24,7 +24,7 @@ pub fn stock_list(list_art: Vec<&str>, list_cat: Vec<&str>) -> String {
 
     return list_cat.iter()
         .map(|category_str| category_str.to_string())
-        .map(|category_string| format(category_string))
+        .map(format)
         .join(" - ");
 }
 
@@ -52,9 +52,9 @@ struct StockItem {
 
 impl StockItem {
     pub fn new(input: String) -> Self {
-        let split: Vec<&str> = input.split(" ").collect();
+        let split: Vec<&str> = input.split(' ').collect();
 
-        let category = split.get(0)
+        let category = split.first()
             .unwrap()
             .to_string()
             .chars()

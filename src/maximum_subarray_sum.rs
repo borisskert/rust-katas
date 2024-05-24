@@ -15,8 +15,8 @@ pub fn max_sequence(seq: &[i32]) -> i32 {
             let next_current = cmp::max(0, current + i);
             let next_max = cmp::max(next_current, max);
 
-            return (next_max, next_current);
+            (next_max, next_current)
         });
 
-    return max;
+    max
 }

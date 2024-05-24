@@ -16,11 +16,11 @@ pub fn anagrams(word: &str, words: &[String]) -> Vec<String> {
 
     return words.iter()
         .filter(|x| sort_letters(x) == sorted)
-        .map(|x| String::from(x))
+        .map(String::from)
         .collect();
 }
 
-fn sort_letters(word: &String) -> String {
+fn sort_letters(word: &str) -> String {
     return word.chars()
         .sorted()
         .collect();

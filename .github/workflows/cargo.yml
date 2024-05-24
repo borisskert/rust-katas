@@ -12,12 +12,15 @@ jobs:
     name: Build and run
     runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
       - name: Setup Rust environment
         uses: actions-rs/toolchain@v1
         with:
           toolchain: 1.62
+
+      - name: Lint code
+        run: cargo clippy -- -Dwarnings
 
       - name: Build solution
         run: cargo build

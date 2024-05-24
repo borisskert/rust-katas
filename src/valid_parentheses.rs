@@ -8,7 +8,7 @@
 ///
 pub fn valid_parentheses(s: &str) -> bool {
     s.chars()
-        .fold(0, |balance, c| next_balance(balance, c)) == 0
+        .fold(0, next_balance) == 0
 }
 
 fn next_balance(balance: i8, c: char) -> i8 {
@@ -22,7 +22,7 @@ fn next_balance(balance: i8, c: char) -> i8 {
         return balance - 1;
     }
 
-    return balance;
+    balance
 }
 
 // #againwhatlearned

@@ -9,8 +9,8 @@ use itertools::Itertools;
 /// returns: String containing the spun words
 ///
 pub fn spin_words(words: &str) -> String {
-    words.split(" ")
-        .map(|word| spin_word(word))
+    words.split(' ')
+        .map(spin_word)
         .join(" ")
 }
 
@@ -21,5 +21,5 @@ fn spin_word(word: &str) -> String {
             .collect();
     }
 
-    return String::from(word);
+    String::from(word)
 }
