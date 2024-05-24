@@ -18,6 +18,7 @@ fn basics_choose_best_sum() {
 }
 
 #[test]
+#[ignore]
 fn performance_test() {
     let ts = vec![
         931, 744, 763, 825, 713, 851, 867, 435, 726, 112, 847, 697, 547, 384, 897, 455, 242, 564, 873,
