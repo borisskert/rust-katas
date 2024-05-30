@@ -6,3 +6,4 @@ pub mod maximum_subarray_sum;
 pub mod help_the_bookseller;
 pub mod best_travel;
 pub mod find_the_smallest;
+pub mod simple_assembler_interpreter;
