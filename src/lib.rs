@@ -7,3 +7,4 @@ pub mod help_the_bookseller;
 pub mod best_travel;
 pub mod find_the_smallest;
 pub mod simple_assembler_interpreter;
+pub mod good_vs_evil;
