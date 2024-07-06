@@ -10,3 +10,4 @@ pub mod simple_assembler_interpreter;
 pub mod good_vs_evil;
 pub mod integers_recreation_one;
 pub mod tic_tac_toe_checker;
+pub mod bananas;
