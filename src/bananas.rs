@@ -23,10 +23,10 @@ fn take_and_omit(text: &str, banana: &str) -> Vec<String> {
     let omitted: Vec<String> = omit_one(text, banana);
     let taken: Vec<String> = take_one(text, banana);
 
-    return omitted.iter()
+    omitted.iter()
         .chain(taken.iter())
         .cloned()
-        .collect();
+        .collect()
 }
 
 fn take_one(text: &str, banana: &str) -> Vec<String> {

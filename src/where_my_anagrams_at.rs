@@ -14,14 +14,14 @@ use itertools::Itertools;
 pub fn anagrams(word: &str, words: &[String]) -> Vec<String> {
     let sorted = sort_letters(&String::from(word));
 
-    return words.iter()
+    words.iter()
         .filter(|x| sort_letters(x) == sorted)
         .map(String::from)
-        .collect();
+        .collect()
 }
 
 fn sort_letters(word: &str) -> String {
-    return word.chars()
+    word.chars()
         .sorted()
-        .collect();
+        .collect()
 }

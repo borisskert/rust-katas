@@ -22,10 +22,10 @@ pub fn stock_list(list_art: Vec<&str>, list_cat: Vec<&str>) -> String {
         format!("({} : {})", category, quantity_as_string)
     };
 
-    return list_cat.iter()
+    list_cat.iter()
         .map(|category_str| category_str.to_string())
         .map(format)
-        .join(" - ");
+        .join(" - ")
 }
 
 fn create_stock(stock_items: Vec<StockItem>) -> HashMap<String, i32> {
