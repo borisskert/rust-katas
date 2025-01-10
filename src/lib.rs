@@ -11,3 +11,4 @@ pub mod good_vs_evil;
 pub mod integers_recreation_one;
 pub mod tic_tac_toe_checker;
 pub mod bananas;
+pub mod count_ip_addresses;
