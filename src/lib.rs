@@ -14,3 +14,4 @@ pub mod bananas;
 pub mod count_ip_addresses;
 pub mod directions_reduction;
 pub mod weight_for_weight;
+pub mod human_readable_time;
