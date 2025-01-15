@@ -26,7 +26,7 @@ impl Weight {
     }
 
     fn multiple_of(weight: &str) -> Vec<Weight> {
-        weight.split_whitespace().map(|w| Weight::new(w)).collect()
+        weight.split_whitespace().map(Weight::new).collect()
     }
 }
 
