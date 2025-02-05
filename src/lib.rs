@@ -21,3 +21,4 @@ pub mod string_incrementer;
 pub mod greed_is_good;
 pub mod pagination_helper;
 pub mod multiples_of_3_or_5;
+pub mod even_or_odd;
