@@ -24,3 +24,4 @@ pub mod multiples_of_3_or_5;
 pub mod even_or_odd;
 pub mod vowel_count;
 pub mod disemvowel_trolls;
+pub mod square_every_digit;
