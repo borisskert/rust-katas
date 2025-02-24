@@ -28,3 +28,4 @@ pub mod square_every_digit;
 pub mod multiply;
 pub mod who_likes_it;
 pub mod find_the_odd_int;
+pub mod array_diff;
