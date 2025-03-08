@@ -29,3 +29,4 @@ pub mod multiply;
 pub mod who_likes_it;
 pub mod find_the_odd_int;
 pub mod array_diff;
+pub mod sum_of_digits_digital_root;
