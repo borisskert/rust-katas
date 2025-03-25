@@ -1,7 +1,7 @@
 /// https://www.codewars.com/kata/526989a41034285187000de4/train/rust
-/// 
+///
 /// # Arguments
-/// 
+///
 /// * `start`: &str - the starting IP address
 /// * `end`: &str - the ending IP address
 pub fn ips_between(start: &str, end: &str) -> u32 {
@@ -31,6 +31,10 @@ impl IpAddress {
     }
 
     pub fn to_u32(&self) -> u32 {
-        (self.a as u32) << 24 | (self.b as u32) << 16 | (self.c as u32) << 8 | self.d as u32
+        let a = self.a as u32;
+        let b = self.b as u32;
+        let c = self.c as u32;
+
+        (a << 24) | (b << 16) | (c << 8) | self.d as u32
     }
 }
