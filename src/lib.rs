@@ -36,3 +36,4 @@ pub mod return_negative;
 pub mod bit_counting;
 pub mod sum_of_positive;
 pub mod reversed_strings;
+pub mod draw_a_circle;
