@@ -37,3 +37,4 @@ pub mod bit_counting;
 pub mod sum_of_positive;
 pub mod reversed_strings;
 pub mod draw_a_circle;
+pub mod convert_a_number_to_a_string;
